@@ -31,6 +31,7 @@ function ListingScreen(props) {
     };
 
   return (
+    
     <Screen style={styles.container}>
        
           <ActivityIndicator animating={loading} />
