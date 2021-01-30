@@ -13,6 +13,7 @@ Features
 Installation
 ------------
 
+IMPORTANT: First run "npm i" to install all dependencies on the project!
 This project needs Expo for simulation.
 Download and run script "npm start"
-Not implemented for android devices, only for iOs.
+Not implemented for android devices, only for iOS.
