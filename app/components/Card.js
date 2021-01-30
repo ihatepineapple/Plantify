@@ -9,7 +9,7 @@ function Card({title, subtitle, imageUrl, onPress}) {
     return (
      
         <View style={styles.card}>
-            <Image style={styles.image} source={require("../assets/test-image.jpg")} />
+            <Image style={styles.image} source={imageUrl} />
             {/* <Image style={styles.image} source={{ uri: imageUrl }} /> */}
             <View style={styles.infoContainer}>
                 <View style={styles.detailsContainer}>

@@ -10,9 +10,10 @@ import navigationTheme from './app/navigation/navigationTheme';
 
 export default function App() {
   return (
-    <NavigationContainer theme={navigationTheme}>
-      <AppNavigator />
-    </NavigationContainer>
+    // <NavigationContainer theme={navigationTheme}>
+    //   <AppNavigator />
+    // </NavigationContainer>
+    <ListingScreen />
   );
 }
 
