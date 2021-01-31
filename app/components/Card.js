@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, StyleSheet, Image, TouchableWithoutFeedback } from 'react-native';
-import SmallButton from './SmallButton';
 
 import AppText from "./AppText"
 
@@ -10,15 +9,13 @@ function Card({ title, subtitle, imageUrl }) {
      
         <View style={styles.card}>
             <Image style={styles.image} source={imageUrl} />
-            {/* <Image style={styles.image} source={{ uri: imageUrl }} /> */}
+           
             <View style={styles.infoContainer}>
                 <View style={styles.detailsContainer}>
                     <AppText style={styles.title} numberOfLines={1}>{title}</AppText>
                     <AppText style={styles.subtitle} numberOfLines={1}>{subtitle}</AppText>
                 </View>
-                <View style={styles.buttonContainer}>
-                    <SmallButton title="Add" />
-                </View>
+              
             </View>
         </View>
     );

@@ -1,7 +1,7 @@
 # Plantify
 =======
 
-Plantify is a plant catalogue app that allows users to browse through an extensive catalogue and add a certain plant to their collection. They can also delete plants from the collection.
+Plantify is a plant catalogue app that allows users to browse through an extensive catalogue. More functionalities to be added, like the possibility to add plants to your collection.
 
 Features
 -------

@@ -3,8 +3,10 @@ import { View, StyleSheet, ImageBackground, Image } from 'react-native';
 import AppButton from '../components/AppButton';
 
 import AppText from "../components/AppText";
+ 
 
-function WelcomeScreen(props) {
+function WelcomeScreen({ navigation }) {
+
   return (
     <ImageBackground style={styles.background} source={require('../assets/background.jpg')}>
         <View style={styles.container}>
@@ -12,7 +14,7 @@ function WelcomeScreen(props) {
             <AppText style={styles.title}>Your plant catalog app.</AppText>
         </View>
         <View style={styles.buttonContainer}>
-            <AppButton title="Start" />
+            <AppButton title="Start" onPress={() => navigation.navigate("Listings")}/>
         </View>
     </ImageBackground>
   );
