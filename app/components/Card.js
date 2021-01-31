@@ -5,7 +5,7 @@ import SmallButton from './SmallButton';
 import AppText from "./AppText"
 
 
-function Card({title, subtitle, imageUrl, onPress}) {
+function Card({ title, subtitle, imageUrl }) {
     return (
      
         <View style={styles.card}>
@@ -51,8 +51,9 @@ const styles = StyleSheet.create({
         flexDirection: "row"
     },
     buttonContainer: {
-        justifyContent: "center",
-        left: 70,
+        position: "absolute",
+        right: 10,
+        top: 10,
        
     }
 })

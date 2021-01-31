@@ -9,26 +9,31 @@ import AppButton from "../components/AppButton";
 function ListingScreen(props) {
     const [plants, setPlants] = useState([]);
     // const [error, setError] = useState(false);
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(false);
+    // const [shortList, setShortList] = useState([]);
 
     useEffect(() => {
       loadPlants();
     }, []);
 
-    const loadPlants = async () => {
+    const loadPlants = (async () => {
       setLoading(true);
       const response = await plantsApi.getPlants();
-      setPlants(response.data);
+      setPlants(response.data.data);
       setLoading(false);
 
-      if (!response.ok) return console.los("error loading");
-
+      if (!response.ok) return console.log("error loading");
       // setError(false);
-      
       console.log(plants);
 
-    
-    };
+      // const shortList = [...plants]
+      // console.log(shortList)
+
+      // setShortList(plants.splice(0, 10))
+      // console.log(shortList);
+
+
+    });
 
   return (
     
@@ -43,7 +48,7 @@ function ListingScreen(props) {
                   <Card
                     title={item.common_name}
                     subtitle={item.scientific_name}
-                    imageUrl={item.image_url} />
+                    imageUrl={{ uri: item.image_url}} />
                 )}
               />:
               <>
